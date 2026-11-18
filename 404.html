@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting…</title>
+    <script>
+      (function (location) {
+        var redirect =
+          location.protocol +
+          "//" +
+          location.hostname +
+          (location.port ? ":" + location.port : "") +
+          "/?/" +
+          location.pathname.slice(1).replace(/&/g, "~and~") +
+          (location.search
+            ? "&" + location.search.slice(1).replace(/&/g, "~and~")
+            : "") +
+          location.hash;
+        location.replace(redirect);
+      })(window.location);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3, 5, 7 Game · Play Online with Friends | DINO</title>
+    <meta
+      name="description"
+      content="Play the 3, 5, 7 game with a friend in your browser. Share a room code, hop on a video call, and take turns removing stones — whoever takes the last one loses."
+    />
+    <meta
+      name="keywords"
+      content="DINO, 3 5 7 game, online mini games, P2P games, play with friends, 357 game"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="application-name" content="DINO" />
+    <link rel="canonical" href="https://dino.mymyopc.com/fanxiang-nimu-boyi" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#09090b"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DINO" />
+    <meta
+      property="og:title"
+      content="3, 5, 7 Game · Play Online with Friends | DINO"
+    />
+    <meta
+      property="og:description"
+      content="Play the 3, 5, 7 game with a friend in your browser. Share a room code, hop on a video call, and take turns removing stones — whoever takes the last one loses."
+    />
+    <meta property="og:url" content="https://dino.mymyopc.com/fanxiang-nimu-boyi" />
+    <meta
+      property="og:image"
+      content="https://dino.mymyopc.com/brand/dino-256.png"
+    />
+    <meta property="og:image:alt" content="DINO logo" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="3, 5, 7 Game · Play Online with Friends | DINO"
+    />
+    <meta
+      name="twitter:description"
+      content="Play the 3, 5, 7 game with a friend in your browser. Share a room code, hop on a video call, and take turns removing stones — whoever takes the last one loses."
+    />
+    <meta
+      name="twitter:image"
+      content="https://dino.mymyopc.com/brand/dino-256.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "DINO",
+        "url": "https://dino.mymyopc.com/",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Any",
+        "description": "A free online mini-game hub. Create a room code and play 3-5-7 with a friend in real time, with video chat.",
+        "inLanguage": ["en", "zh-CN"],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <script>
+      // Restore the original path after the GitHub Pages 404.html redirect.
+      ((location) => {
+        if (location.search[1] === "/") {
+          const decoded = location.search
+            .slice(1)
+            .split("&")
+            .map((segment) => segment.replace(/~and~/g, "&"))
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            location.pathname.slice(0, -1) + decoded + location.hash,
+          );
+        }
+      })(window.location);
+    </script>
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem("app.theme") || "light";
+          const isDark =
+            storedTheme === "dark" ||
+            (storedTheme === "system" &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          const root = document.documentElement;
+          root.classList.toggle("dark", isDark);
+          root.style.colorScheme = isDark ? "dark" : "light";
+
+          let locale = localStorage.getItem("app.locale");
+          if (locale !== "zh" && locale !== "en") {
+            locale = "en";
+          }
+          root.lang = locale === "zh" ? "zh-CN" : "en";
+        } catch {
+          /* ignore storage access errors */
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-Cf_V6vha.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-loXHs-Oh.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
